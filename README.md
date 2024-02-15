@@ -18,6 +18,9 @@
 #### Playing with Heartbeat sensor
 
 
+https://github.com/carmenrobres/microchallenge1/assets/145042059/b36eaae2-ec2b-4257-b77c-70317b949014
+https://github.com/carmenrobres/microchallenge1/assets/145042059/81c04e57-5235-4150-973f-f9a7f36aa8db
+
 #### Iteration 2
 ![ITeration 2](https://github.com/carmenrobres/microchallenge1/assets/145042059/c4e8d823-ab0d-4ca1-86e1-60300913ad60)
 ![Diagram](https://github.com/carmenrobres/microchallenge1/assets/145042059/6f3defc2-8137-4491-a591-ea3631245b1b)
