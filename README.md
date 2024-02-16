@@ -78,6 +78,8 @@ Coding+electronics:
 - Broke the battery :(
 
 3D printing:
-- Add holes for the connecting cables
+- Add holes to connect the cables
+- Add raft for better adherence to the bed
 
+![WhatsApp Image 2024-02-16 at 15 23 46](https://github.com/carmenrobres/microchallenge1/assets/147055292/f63e65be-2cac-4446-8eec-4bb442080773)
 
