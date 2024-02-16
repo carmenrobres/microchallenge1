@@ -17,6 +17,9 @@ The necklace consist of a pendant where all electronics would be integrated. To 
 ## Process
 ### Electronics
 
+![WhatsApp Image 2024-02-16 at 15 23 46](https://github.com/carmenrobres/microchallenge1/assets/147055292/a4e11169-6cd3-4bba-9c9c-1b9525b4bd9e)
+
+
 #### Iteration 1
 ![ITeration 1](https://github.com/carmenrobres/microchallenge1/assets/145042059/52a172f3-bdde-4a2e-be31-88d34c86e9b0)
 
@@ -43,6 +46,9 @@ For the pendant, we looked for a 3D model of a container that could be opened th
 
 The 3D printing took several iterations, as the first models did not have enough adherence to the bed and failed. We therefore added a raft to the model for better adherence, and the ensuing prints were successful.
 
+https://github.com/carmenrobres/microchallenge1/assets/147055292/076de704-3b1a-47f5-b084-2b780e98fe50
+
+
 ### Build of Materials
 
 Iteration 1: Barduino, BreadBoard, Vibration motor
@@ -68,5 +74,4 @@ We also thought of linking an AI that would send you a notification when you are
 Coding
 
 3D printing:
-
-
+![WhatsApp Image 2024-02-16 at 15 23 46](https://github.com/carmenrobres/microchallenge1/assets/147055292/79599299-4fdb-41a4-b8ab-37b9962e98d4)
