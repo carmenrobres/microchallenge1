@@ -48,6 +48,11 @@ Code together
 For the pendant, we looked for a 3D model of a container that could be opened through a screwing mechanism to integrate the electronics seamlessly. We downloaded a model from Thingyverse and scaled it to a bigger size to be able to fit the electronics. We also added holes on both sides of the model to be able to plug in the LED light, the vibration motor, the chain and the capacitive wires.
 
 The 3D printing took several iterations, as the first models did not have enough adherence to the bed and failed. We therefore added a raft to the model for better adherence, and the ensuing prints were successful.
+![Screenshot 2024-02-16 155107](https://github.com/carmenrobres/microchallenge1/assets/147055292/a9a5a5c1-3a88-41b9-bfd8-2e8efae664a7)
+![Screenshot 2024-02-16 155218](https://github.com/carmenrobres/microchallenge1/assets/147055292/2ccdd706-f9c8-45e0-b82e-05f51c485539)
+https://github.com/carmenrobres/microchallenge1/assets/147055292/5ba9024d-1561-4796-8336-6f010d44642f
+
+
 
 ### Build of Materials
 
