@@ -27,16 +27,22 @@ https://github.com/carmenrobres/microchallenge1/assets/145042059/b36eaae2-ec2b-4
 https://github.com/carmenrobres/microchallenge1/assets/145042059/81c04e57-5235-4150-973f-f9a7f36aa8db
 
 #### Iteration 2
-![ITeration 2](https://github.com/carmenrobres/microchallenge1/assets/145042059/c4e8d823-ab0d-4ca1-86e1-60300913ad60)
-![Diagram](https://github.com/carmenrobres/microchallenge1/assets/145042059/6f3defc2-8137-4491-a591-ea3631245b1b)
+
+![ITeration 2 (1)](https://github.com/carmenrobres/microchallenge1/assets/145042059/b8a68586-0f7e-45b8-8094-b3b721644305)
+
+![Diagram (1)](https://github.com/carmenrobres/microchallenge1/assets/145042059/945f7ad1-847c-4cf7-a443-52fc0cc5b395)
+
 
 ### Code
 
 Code for vibration motor
+![MOTOR_CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/e9527346-c5eb-4178-a97d-9507a5110c37)
 
 Code for wifi
+![WIFI_CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/d961ff6f-c2b7-4504-a207-ec870e60c32d)
 
 Code together
+![CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/3b1b0a4c-38b0-4758-bf15-1d8a3d4c4214)
 
 ### Fabrication process
 For the pendant, we looked for a 3D model of a container that could be opened through a screwing mechanism to integrate the electronics seamlessly. We downloaded a model from Thingyverse and scaled it to a bigger size to be able to fit the electronics. We also added holes on both sides of the model to be able to plug in the LED light, the vibration motor, the chain and the capacitive wires.
@@ -46,8 +52,7 @@ The 3D printing took several iterations, as the first models did not have enough
 ### Build of Materials
 
 Iteration 1: Barduino, BreadBoard, Vibration motor
-Iteration 2: Esp 32 Xiao, Vibration motor, LED, Battery, Resistance
-Casing
+Iteration 2: Esp 32 Xiao, Vibration motor, Flora Neopixel, Battery 3.3V, Casing
 Cable sensor
 
 
@@ -58,6 +63,8 @@ Cable sensor
 We had big ambitions about this necklace during the ideation phase, but this was a humbling experience as we realised that developing what seem to be simple technology can be very cumbersome, especially in a short amount of time. We therefore scaled down on ambition. 
 
 ### Photo
+![FInal idea](https://github.com/carmenrobres/microchallenge1/assets/145042059/fce539fc-656c-4bfc-a830-deaddc43f828)
+
 ### Reflect about future development opportunity
 Instead of integrating a breathing exercise of 5 breaths, we could integrate a sensor that would detect when the user is more relaxed, which would stop the breathing exercise. 
 We would also like to gather the data collected about anxiety to make a visual installation of the level of anxiety in a certain location, if several users are wearing the necklace.
@@ -65,8 +72,12 @@ We also thought of linking an AI that would send you a notification when you are
 
 ### Described problems and how the team solved them
 
-Coding
+Coding+electronics:
+- Delays!
+- Xiao didn't work with touch sensor
+- Broke the battery :(
 
 3D printing:
+- Add holes for the connecting cables
 
 
