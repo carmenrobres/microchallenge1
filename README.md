@@ -1,4 +1,5 @@
 # microchallenge1
+*Sophie Marandon and Carmen Robres de Veciana*
 
 ## Initial Idea
 ### Interests
@@ -6,8 +7,19 @@ We were both interested in the impact of technology on emotions and mental healt
 ### Concept
 We decided to create a wearable device that would sense your anxiety and help you follow breathing exercises guided by vibrations to calm down. As anxiety is often an irrational feeling, it is hard to communicate to others. What is more, most people are not even consicous of the fact that they are anxious. This is why we decided to make this device collaborative: when it senses that you're anxious, the device sends a signal to a paired device (a partner, a friend etc.), which helps them understand how you're feeling and act accordingly, without needing any communication from your side.
 ### References
+Products that are similar and already exist:
+
+[BOND TOUCH Par de pulseras para parejas](https://www.amazon.com/-/es/BOND-TOUCH-pulseras-para-parejas/dp/B0C4BH8LKH/ref=sr_1_6?keywords=Long+Distance+Touch+Bracelets&qid=1707839897&sr=8-6)
+
+[Totwoo Colección Candy](https://www.amazon.com/dp/B0CFY4G66S/ref=syn_sd_onsite_desktop_0?ie=UTF8&pd_rd_plhdr=t&aref=jWdT3daO2h&th=1) 
+
+[MDEF project with soft electronics](https://www.youtube.com/watch?v=T2K_iBWEWjQ&t=46s)
+
+
 ### Planning
-![image](https://github.com/carmenrobres/microchallenge1/assets/145042059/e4d4272d-3707-42e0-b500-31bdad4e0203)
+![Planning](https://github.com/carmenrobres/microchallenge1/assets/145042059/791c1ba3-a721-4175-8640-fa6f26515ade)
+
+
 
 ### Integrated Design 
 Sensing anxiety with technology through anatomical parameters is challenging, as sensors, such as heartbeat sensors, are hard to calibrate. We therefore had to find a proxy indicator to sense anxiety. We decided to use fidgeting, as we often express anxiety through unconscious mimics. Fidgeting would be detected through a capacitive sensor which would detect when skin is touching the wearable. Having observed that we often play with our rings when we are anxious, our first idea was to create a ring, but we later realised that the electronics to operate the systems would take too much space to be integrated in a ring, so we decided to create a necklace instead.
@@ -16,24 +28,53 @@ The necklace consist of a pendant where all electronics would be integrated. To 
 
 ## Process
 ### Electronics
+The initial step in developing our product involved identifying all the necessary materials required to create the necklace. We opted for an ESP32 Xiao due to its compact size, Wi-Fi connectivity, and pin compatibility. Additionally, we selected a vibration motor for facilitating breathing exercises and an LED to indicate our partner's fidgeting. After finalizing our material choices, we conducted preliminary tests using the resources available in our class.
 
-#### Iteration 1
+Instead of utilizing the ESP32 Xiao, we employed our Barduino, which already possessed Wi-Fi capabilities, a touch sensor, and an integrated LED. Our first test aimed to develop code replicating the breathing exercise on the Barduino. In this test, we utilized the LED to display the ascending and descending breathing patterns instead of a vibration motor.
+
+GIF
+
+#### Iteration 1: Barduino
+After acquiring the vibration motor, our next step was to develop the code for the necklace using the Barduino along with the vibration motor. We chose this approach because it was the system we were most familiar with, and accessing all the components from a single board made development easier. This strategy allowed us to concentrate on code development, testing, and achieving functionality before refining the electronics to a smaller form factor.
+
+Ultimately, the goal was for both the ESP32 Barduino and the ESP32 Xiao C3 to function in a similar manner. Therefore, the code developed in the initial iteration was intended to be compatible with the subsequent iteration.
+
+Using the Barduino, we initially developed a code for the breathing exercise. Subsequently, we crafted a separate code enabling the connection of two devices via MQTT to illuminate each other's LEDs. Finally, we merged both codes into a unified solution. The coding process presented numerous challenges, detailed in the "code" section for further insight.
+
+**Breathing Exercise**
+
+GIF_MOTORTEST1
+
+**Wifi Connection**
+
+GIF_WIFITEST1
+
+These are the materials used on iteration 1: 
 ![ITeration 1](https://github.com/carmenrobres/microchallenge1/assets/145042059/52a172f3-bdde-4a2e-be31-88d34c86e9b0)
 
+
 #### Playing with Heartbeat sensor
+After effectively implementing the vibration breathing exercise, we contemplated when it should conclude and how to detect the easing of anxiety. Initially, we considered integrating a heartbeat sensor, aiming to conclude the breathing exercise upon detecting a specific reduction in the user's BPM. Throughout the afternoon, we delved into comprehending the sensor's functionality and attempted practical application. Despite some success, the sensor's inconsistency presented a significant challenge in accurately measuring data for calibration.
 
+While we gained an understanding of its operation, we recognized that time constraints limited our ability to fine-tune its functionality for our project. Moreover, we acknowledged that anxiety might not always correspond to drastic BPM changes, making the sensor less suitable for our purposes. In the end, we decided that the exercise would conclude after completing five breathing repetitions, equating to a minute of relaxed breathing.
 
-https://github.com/carmenrobres/microchallenge1/assets/145042059/b36eaae2-ec2b-4257-b77c-70317b949014
-https://github.com/carmenrobres/microchallenge1/assets/145042059/81c04e57-5235-4150-973f-f9a7f36aa8db
+GIF_HEART
 
-#### Iteration 2
+#### Iteration 2: ESP32 XIAO C3
+After finalizing the code, we proceeded to test it with our iteration 2 electronics. We replaced the Barduino board with an ESP32 XIAO C3, along with the LED and motor components. Upon testing the code and connecting our two "raw necklaces," we encountered the need for modifications. Unfortunately, the ESP32 XIAO C3 lacked a touch sensor, necessitating adjustments to both our code and electronics.
 
+To address this issue, we reconfigured the code to accommodate a touch button instead of a touchpad. Additionally, we had to modify the pin configurations to ensure compatibility with the new setup. Despite these challenges, we remained committed to ensuring the functionality of our project.
+
+These were the circuit connections: The touch sensor was essentially two cables manually connected whenever we wanted to signal anxiety. Moving forward, we aim to refine this aspect to allow for more subtle activation, considering that anxious fidgeting often occurs unconsciously. Alternatively, we plan to explore using the ESP32 Xiao S3, which includes an available touch sensor, for enhanced functionality.
+
+DIAGRAM
+
+These are the materials used on iteration 2: 
 ![ITeration 2 (1)](https://github.com/carmenrobres/microchallenge1/assets/145042059/b8a68586-0f7e-45b8-8094-b3b721644305)
-
-![Diagram (1)](https://github.com/carmenrobres/microchallenge1/assets/145042059/945f7ad1-847c-4cf7-a443-52fc0cc5b395)
 
 
 ### Code
+
 
 Code for vibration motor
 ![MOTOR_CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/e9527346-c5eb-4178-a97d-9507a5110c37)
