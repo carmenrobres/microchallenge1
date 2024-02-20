@@ -105,9 +105,9 @@ https://github.com/carmenrobres/microchallenge1/assets/147055292/5ba9024d-1561-4
 
 ### Build of Materials
 
-Iteration 1: Barduino, BreadBoard, Vibration motor.
+Iteration 1: 2 Barduino, 2 BreadBoard, 2 Vibration motor.
 
-Iteration 2: Esp 32 Xiao C3, Vibration motor, Flora Neopixel, Battery 3.3V, 3D printed Casing, for the sensor, Cable sensor
+Iteration 2: 2 Esp 32 Xiao C3, 2 Vibration motor, 2 Flora Neopixel, 2 Battery 3.3V, 3D printed Casing, 4 Cable sensor (fake button)
 
 <img src="bom.png"/>
 
@@ -115,29 +115,42 @@ Iteration 2: Esp 32 Xiao C3, Vibration motor, Flora Neopixel, Battery 3.3V, 3D p
 In the repo you will find all the codes we generated with arduino. The final code is AnxietySensorWifi_SOPHIE_FINALXIAO.
 
 ### References
-???
+[MDEF PROJECT](https://didac-torrent.github.io/mdef/pages/fabacademy/challenge_1.html)
+[MQTT CODE](https://fablabbcn-projects.gitlab.io/electronics/barduino-docs/mqtt/)
+[Info on the Motor](https://www.mouser.es/new/dfrobot/dfrobot-fit0774-mini-vibration-motor/?_gl=1*tfxj3x*_ga*ODIyMDc1NDU0LjE3MDc4NDY2OTI.*_ga_15W4STQT4T*MTcwNzg0NjY5MS4xLjAuMTcwNzg0NjY5Mi41OS4wLjA.*_ga_1KQLCYKRX3*MTcwNzg0NjY5MS4xLjAuMTcwNzg0NjY5Mi4wLjAuMA..)
+[Pulse Sensor info](https://lastminuteengineers.com/pulse-sensor-arduino-tutorial/)
+[Esp32 Xiao](https://www.tiendatec.es/maker-zone/microcontroladores/2139-seeed-xiao-esp32-s3-sense-camara-ov2640-wifi-bluetooth-8472496026451.html)
+
 
 ## Final Conclusions
 We had big ambitions about this necklace during the ideation phase, but this was a humbling experience as we realised that developing what seem to be simple technology can be very cumbersome, especially in a short amount of time. We therefore scaled down on ambition. 
 
 ### Photo
-<img src="Planning.png"/>
+<img src="IMG_2515.JPEG"/>
 
 ### Reflect about future development opportunity
-Instead of integrating a breathing exercise of 5 breaths, we could integrate a sensor that would detect when the user is more relaxed, which would stop the breathing exercise. 
-We would also like to gather the data collected about anxiety to make a visual installation of the level of anxiety in a certain location, if several users are wearing the necklace.
-We also thought of linking an AI that would send you a notification when you are fidgeting asking you why you were anxious, to encourage journalling and help people reflect on their anxiety.
+- Instead of incorporating a fixed breathing exercise of 5 breaths, we could integrate a sensor capable of detecting when the user becomes more relaxed, thereby automatically halting the breathing exercise.
 
-### Described problems and how the team solved them
+- Enhancing the casing to be smaller, more aesthetically pleasing, and easier to hang would be beneficial. Additionally, we could explore making the LED display more subtle and improving the structure for attaching the motor.
+
+- To address the challenge of demonstrating the ascending and descending vibration motor effects without delays, we need to explore alternative methods or technologies. This could involve experimenting with different coding techniques or possibly upgrading to a more advanced ESP32 Xiao model, such as the S3, which may offer additional capabilities.
+
+- Finding a more subtle way to utilize the touch sensor, perhaps by redesigning the button mechanism or exploring alternative sensor options, is crucial for enhancing user experience.
+
+- Gather the data collected about anxiety to make a visual installation of the level of anxiety in a certain location, if several users are wearing the necklace.
+
+- Incorporating an AI feature that sends notifications when the user is fidgeting, encouraging self-reflection on anxiety triggers through journaling, adds a valuable dimension to the necklace's functionality. This feature has the potential to foster mindfulness and self-awareness among users.
+
+### Summary of the problems and how the team solved them
 
 Coding+electronics:
-- Delays!
-- Xiao didn't work with touch sensor
-- Broke the battery :(
+- The code didn't let us connect to MQTT and do the breathing exercise at the same time - Reason: Delays! - WE HATE DELAYS WE NEED TO TAKE THEM OUT - Code without delays, while and modify function to make the motor either on or off.
+- Xiao didn't work with touch sensor - Change the code from touchRead to digitalRead, change the electronics so it works as a button instead of a touch sensor.
+- Broke the battery :( - we needed to connect the necklace to a chargable battery
 
 3D printing:
-- Add holes to connect the cables
-- Add raft for better adherence to the bed
+- First case didn't have a system to hang the necklace cable - Add holes to connect the cables
+- The case did not print correctly - Add raft for better adherence to the bed
 
 ![WhatsApp Image 2024-02-16 at 15 23 46](https://github.com/carmenrobres/microchallenge1/assets/147055292/f63e65be-2cac-4446-8eec-4bb442080773)
 
