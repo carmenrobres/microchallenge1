@@ -74,15 +74,25 @@ These are the materials used on iteration 2:
 
 
 ### Code
+**Code for the motor**
+Creating the code for this necklace proved to be the most challenging aspect of the project. We had to simultaneously run two different functions and adapt to every iteration of electronics we employed.
 
+The initial step involved coding for the vibration motor, which initially appeared straightforward. The vibration motor operated analogically, so our task was to control its intensity within the range of 0 to 255. To simulate ascending and descending vibrations, we programmed the motor to vibrate at specific intensities for 20 milliseconds using delays.
 
-Code for vibration motor
+We enhanced the functionality by programming the motor to buzz twice when touched for the first time, indicating the imminent start of the breathing exercise. Additionally, we implemented a condition requiring the user to complete at least five breathing repetitions to stop the vibration motor. While the coding process was relatively simple, we encountered issues with the motor's functionality due to loose connections, as we hadn't soldered it directly to the Barduino. Although the initial code was functional, using delays to mark the breathing exercise posed challenges for subsequent iterations of the code setup.
+
 ![MOTOR_CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/e9527346-c5eb-4178-a97d-9507a5110c37)
 
-Code for wifi
+**Code for Wifi**
+The code utilized for the MQTT connection was adapted from our Barduino exercise conducted during class, accessible [here](https://fablabbcn-projects.gitlab.io/electronics/barduino-docs/mqtt/). We generated two separate codes: one for Sophie and another for Carmen. This enabled us to subscribe to each other's devices and exchange data seamlessly. 
 ![WIFI_CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/d961ff6f-c2b7-4504-a207-ec870e60c32d)
 
-Code together
+**Final code**
+The crucial moment arrived: we needed to consolidate all functionalities into one code that could simultaneously receive and send data while measuring the touch sensor and executing the vibration exercise. Initially, our implementation with delays in the vibration motor code caused issues where the necklace failed to maintain MQTT connectivity during breathing exercises.
+
+To rectify this, we removed all delays and while loops from the main loop to ensure continuous MQTT connection. However, this adjustment rendered the vibration motor incapable of executing the ascending and descending exercises without delays. Despite attempts to create custom delays using the millis function, we encountered challenges, leading us to temporarily set aside the ascending and descending actions and maintain a simple on/off functionality.
+
+On another front, after successfully eliminating delays and ensuring proper connections, we tested the code on the ESP32 Xiao. This necessitated modifications to account for the device's reduced number of pins and the substitution of a button (digitalRead) for the touchpad (touchRead) since the ESP32 Xiao C3 lacked the latter function. This adaptation ensured compatibility with the new hardware setup.
 ![CODE](https://github.com/carmenrobres/microchallenge1/assets/145042059/3b1b0a4c-38b0-4758-bf15-1d8a3d4c4214)
 
 ### Fabrication process
@@ -97,12 +107,15 @@ https://github.com/carmenrobres/microchallenge1/assets/147055292/5ba9024d-1561-4
 
 ### Build of Materials
 
-Iteration 1: Barduino, BreadBoard, Vibration motor
-Iteration 2: Esp 32 Xiao, Vibration motor, Flora Neopixel, Battery 3.3V, Casing
-Cable sensor
+Iteration 1: Barduino, BreadBoard, Vibration motor.
 
+Iteration 2: Esp 32 Xiao C3, Vibration motor, Flora Neopixel, Battery 3.3V, 3D printed Casing, for the sensor, Cable sensor
+
+BOM PICTURE
 
 ### Documents and files
+In the repo you will find all the codes we generated with arduino. The final code is AnxietySensorWifi_SOPHIE_FINALXIAO.
+
 ### References
 
 ## Final Conclusions
@@ -110,6 +123,7 @@ We had big ambitions about this necklace during the ideation phase, but this was
 
 ### Photo
 ![FInal idea](https://github.com/carmenrobres/microchallenge1/assets/145042059/fce539fc-656c-4bfc-a830-deaddc43f828)
+foto final
 
 ### Reflect about future development opportunity
 Instead of integrating a breathing exercise of 5 breaths, we could integrate a sensor that would detect when the user is more relaxed, which would stop the breathing exercise. 
