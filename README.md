@@ -113,7 +113,8 @@ Iteration 2: 2 Esp 32 Xiao C3, 2 Vibration motor, 2 Flora Neopixel, 2 Battery 3.
 
 ### Documents and files
 In the repo you will find all the codes we generated with arduino. The final code is AnxietySensorWifi_SOPHIE_FINALXIAO.
-The 3D fabricaton file: 
+
+The 3D fabricaton file: [necklace.pdf](https://github.com/carmenrobres/microchallenge1/files/14380475/necklace.pdf)
 
 ### References
 [MDEF PROJECT](https://didac-torrent.github.io/mdef/pages/fabacademy/challenge_1.html)
@@ -140,7 +141,7 @@ We had big ambitions about this necklace during the ideation phase, but this was
 - Incorporating an AI feature that sends notifications when the user is fidgeting, encouraging self-reflection on anxiety triggers through journaling, adds a valuable dimension to the necklace's functionality. This feature has the potential to foster mindfulness and self-awareness among users.
 
 ### Design boundaries and personal contributions
-We both had a different set of design boundaries and orgnanised our contributions to the project accordingly as we had to split tasks to ensure that the microchallenge could be completed in the given timeframe. Carmen took care of the main coding elements as she had more experience with that than Sophie, while Sophie tested the heartbeat sensor with Arduino to figure out whether it was a viable option to integrate, as the heartbeat sensor was considered a "non-essential extra". Sophie also took care of the necklace design, modeling the design on Rhino and 3D printing as she had experience manipulating Rhino and wanted to deepen her skills.
+We both had a different set of design boundaries and orgnanised our contributions to the project accordingly as we had to split tasks to ensure that the microchallenge could be completed in the given timeframe. Carmen took care of the main coding elements as she had more experience with that than Sophie, while Sophie tested the heartbeat sensor with Arduino to figure out whether it was a viable option to integrate, as the heartbeat sensor was considered a "non-essential extra". Sophie also took care of the necklace design, modeling the design on Rhino and 3D printing it as she had experience manipulating Rhino and wanted to deepen her skills.
 
 ### Summary of the problems and how the team solved them
 
