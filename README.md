@@ -1,5 +1,6 @@
 # microchallenge1
-*Sophie Marandon and Carmen Robres de Veciana*
+*Sophie Marandon - https://sophma.github.io/myMDEFportfolio/
+Carmen Robres de Veciana - https://carmenrobres.github.io/portfolio/*
 
 ## Initial Idea
 ### Interests
