@@ -1,7 +1,7 @@
 # microchallenge1
-*Sophie Marandon - https://sophma.github.io/myMDEFportfolio/
+Sophie Marandon - https://sophma.github.io/myMDEFportfolio/
 
-Carmen Robres de Veciana - https://carmenrobres.github.io/portfolio/*
+Carmen Robres de Veciana - https://carmenrobres.github.io/portfolio/
 
 ## Initial Idea
 ### Interests
